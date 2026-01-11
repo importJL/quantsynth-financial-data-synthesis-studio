@@ -1,0 +1,5 @@
+{
+  "name": "QuantSynth: Financial Data Synthesis Studio",
+  "description": "A high-fidelity financial data generator that uses quantitative finance models like Geometric Brownian Motion and Vasicek Mean Reversion to synthesize realistic market data. Users can customize drift, volatility, and mean-reversion parameters, visualize results via interactive charts, and export datasets to CSV or JSON.",
+  "requestFramePermissions": []
+}

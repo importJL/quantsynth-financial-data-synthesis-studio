@@ -1,0 +1,79 @@
+/* Fix for Brush component text overflow in Recharts */
+.recharts-brush-texts {
+  overflow: visible !important;
+}
+
+.recharts-brush-texts text {
+  font-size: 10px !important;
+  fill: #475569;
+}
+
+.dark .recharts-brush-texts text {
+  fill: #94a3b8;
+}
+
+/* Target specific text elements for better control */
+.recharts-brush-texts .recharts-brush-text {
+  font-size: 10px !important;
+  fill: #475569;
+}
+
+.dark .recharts-brush-texts .recharts-brush-text {
+  fill: #94a3b8;
+}
+
+/* Ensure the brush container has proper constraints */
+.recharts-brush {
+  overflow: visible !important;
+}
+
+/* Style the brush slider handles */
+.recharts-brush-slider {
+  width: 8px !important;
+  height: 20px !important;
+  border-radius: 4px !important;
+  background: #6366f1 !important;
+}
+
+.dark .recharts-brush-slider {
+  background: #818cf8 !important;
+}
+
+/* Style the brush background */
+.recharts-brush-traveller {
+  height: 25px !important;
+  border-radius: 4px !important;
+  background: rgba(99, 102, 241, 0.1) !important;
+}
+
+.dark .recharts-brush-traveller {
+  background: rgba(129, 140, 248, 0.1) !important;
+}
+
+/* Ensure text containers have proper spacing and visibility */
+.recharts-brush-texts g {
+  transform: translateY(-8px);
+}
+
+/* Position end date text to be anchored inside */
+.recharts-brush-texts .recharts-brush-text:last-child {
+  transform: translateX(-100%);
+}
+
+/* Add padding to prevent text cutoff */
+.recharts-brush .recharts-brush-sliders {
+  padding: 0 40px;
+}
+
+/* Increase brush height to accommodate text */
+.recharts-brush {
+  height: 40px !important;
+  margin-right: 20px;
+}
+
+/* Adjust text position for better visibility */
+.recharts-brush-texts {
+  pointer-events: none;
+  transform: translateY(-3px);
+  padding-right: 0;
+}
